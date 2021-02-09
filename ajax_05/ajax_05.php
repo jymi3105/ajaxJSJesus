@@ -8,6 +8,7 @@
 		$conn = new PDO("mysql:host=$servername;dbname=$dbName;charset=utf8", $username, $password);
 		$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
+		/**CONTROLO QUE LE PASO ESE CONTROLADOR */
 		if(isset($_GET["editorial"])) {
 			$editorial = $_GET["editorial"];
 			foreach($conn->query("SELECT * FROM libros where editorial ='" . $editorial . "'") as $fila) {

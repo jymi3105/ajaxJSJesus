@@ -59,7 +59,7 @@
 				DESPLEGABLE */
 				var veditorial = document.getElementById("selectEditorial").value;
 
-				peticion.open('GET','ajax_05.php?editorial=' + veditorial,true);
+				peticion.open('GET','ajax_05.php?editorial=' + veditorial, true);
 				peticion.send(null);
 
 				peticion.onreadystatechange = function (evento) {
